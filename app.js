@@ -14,7 +14,7 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-const dev_db_url = mongodb+srv://hafa:letmein12@cluster0.zva4lgm.mongodb.net/libraryDB?retryWrites=true&w=majority ;
+const dev_db_url = "mongodb+srv://hafa:letmein12@cluster0.zva4lgm.mongodb.net/libraryDB?retryWrites=true&w=majority" ;
 const mongoDB = process.env.DB_CONNECT || dev_db_url;
 
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
